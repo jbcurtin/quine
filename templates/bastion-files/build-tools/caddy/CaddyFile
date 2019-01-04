@@ -1,0 +1,8 @@
+bastion.{{DNS_NAME}} {
+  tls bastion-{{ '-'.join(DNS_NAME.split('.')) }}@jbcurtin.io
+  proxy /v2 registry:5000 {
+    transparent
+  }
+  errors
+  log
+}

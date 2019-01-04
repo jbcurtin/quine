@@ -1,0 +1,27 @@
+version: '3'
+networks:
+  repo:
+services:
+  bastion-registry:
+    networks:
+      repo:
+        aliases:
+          - registry
+    image: registry:2
+    restart: always
+    ports:
+      - "5000:5000"
+
+  bastion-caddy:
+    networks:
+      repo:
+    image: "wemakeservices/caddy-docker:latest"
+    volumes:
+      - ./build-tools/caddy/certs:/root/.caddy:rw
+      - ./build-tools/caddy/CaddyFile:/etc/Caddyfile
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - bastion-registry
+
