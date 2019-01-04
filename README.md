@@ -2,7 +2,7 @@
 
 ## Design
 
-`quine` was invented to allow engineers the ability to deploy clusters quickly and efficiently. Expanding upon Red Green Blue Deployment, quine uses Babylonian Zodiacal Constellations[0] to
+`quine` was built to allow engineers the ability to deploy clusters quickly and efficiently. Expanding upon Red Green Blue Deployment, quine uses Babylonian Zodiacal Constellations[0] to
 create complete and secure deployments. `quine` deployes to Amazon Web Services, bypassing the need to learn AWS Cloud Formation. `quine` also builds and deploys docker containers to the EC2 instances that are created.
 
 ## Build Steps
@@ -48,10 +48,11 @@ if [ "$1" == 'client-deploy' ]; then
   popd 2>/dev/null
 fi
 if [ "$1" == 'full-deploy-client' ]; then
+  assert_build_env_vars
   export SERVICE_DNS_NAME='https://'
-  RESOURCE_NAME='central' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-map
-  RESOURCE_NAME='central' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-build
-  RESOURCE_NAME='central' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-deploy
+  RESOURCE_NAME='client' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-map
+  RESOURCE_NAME='client' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-build
+  RESOURCE_NAME='client' DNS_NAME='quine.pspython.com' VERSION='latest' STAGE='develop' DEPLOYMENT='pleiades' bash operations.sh client-deploy
 fi
 if [ "$1" == 'forward-map' ]; then
   assert_build_env_vars
