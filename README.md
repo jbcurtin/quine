@@ -35,6 +35,8 @@ Today, Quine is capable of the following opinionated deployment scenarios
 - Route53 Private Hosted Zone support ( https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html ) ( $5,000 )
 - Enable intelligent ACM allocation and updates when new subdomains are added to TLDs within a Route53 Hosted Zone ( https://github.com/jbcurtin/quine#acm ) ( $15,000 )
 
+https://www.patreon.com/jbcurtin
+
 ## Build Steps
 
 ```
