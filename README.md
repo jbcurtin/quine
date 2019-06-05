@@ -158,3 +158,7 @@ https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-trans
 ### Route53
 
 In order to save time, I've opted to bypass the requirement to manage private-DNS. For private DNS, I would have to add an additional Hosted Zone with VPC to route requests. In the future, it needs to be fixed so that DNS requests only happen locally.
+
+### Concurrent SSH Connections
+
+A plan has yet been created to connect to more than 20 servers at once.
