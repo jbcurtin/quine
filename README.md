@@ -5,6 +5,13 @@
 `quine` was built to allow engineers the ability to deploy clusters quickly and efficiently. Expanding upon Red Green Blue Deployment, quine uses Babylonian Zodiacal Constellations[0] to
 create complete and secure deployments. `quine` deployes to Amazon Web Services, bypassing the need to learn AWS Cloud Formation. `quine` also builds and deploys docker containers to the EC2 instances that are created.
 
+
+## Fund Bounty Target Upgrades
+
+The initial build of Quine took about two months of development. There are still some areas where the codebase could be upgraded to provide better support for larger companies to deploy hundreds of servers at a time. Please consider contributing to Quine Bounty Targets
+
+https://www.patreon.com/jbcurtin
+
 ## Build Steps
 
 ```
