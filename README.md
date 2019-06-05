@@ -20,7 +20,9 @@ Today, Quine is capable of the following opinionated deployment scenarios
 - ElasticCache(Redis) Single node deployment. ElasticCache(Redis) is configured to launch within a VPC private subnet only.
 - RDS(PostrgeSQL) Single node deployment. RDS(PostgreSQL) is configured to launch within a VPC private subnet only.
 
-The core developer of Quine is looking for funding for the following Bounty Target Upgrades
+[AWS Documentation about vpc deployment scenarios](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenarios.html)
+
+`quine` is looking for funding for the following Bounty Target Upgrades
 - ElasticCache(Redis) Multi Node Deployment ( $1,000 )
 - RDS(PostgreSQL) High Availability Deployemnt with and without Aurora DB ( $10,000 )
 - RDS(MySQL) Single Node Deployemnt without Aurora DB ( $2,000 )
