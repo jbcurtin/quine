@@ -8,11 +8,11 @@ https://jbcurtin.github.io/quine-project.jbcurtin.io/
 
 ## Fund Bounty Target Upgrades
 
-The initial build of Quine took about two months of development. There are still some areas where the codebase could be upgraded to provide better support for larger companies to deploy hundreds of servers at a time. Please consider contributing to Quine Bounty Targets
+The initial build of `quine` took about two months of development. There are still some areas where the codebase could be upgraded to provide better support for larger companies to deploy hundreds of servers at a time. Please consider contributing to `quine` Bounty Targets
 
 https://www.patreon.com/jbcurtin
 
-Today, Quine is capable of the following opinionated deployment scenarios
+Today, `quine` is capable of the following opinionated deployment scenarios
 - AWS Cloud Front, ACM, and S3 delpoyment for custom domain
 - Private VPC Configuration, complete with bastion service available from an Elastic IP. EC2 Nodes have `docker` and `docker-compose` installed
 - Public VPC Configuration, complete with bastion service available from an Elastic IP. EC2 Nodes have `docker` and `docker-compose` installed
