@@ -23,17 +23,17 @@ Today, `quine` is capable of the following opinionated deployment scenarios
 [AWS Documentation about vpc deployment scenarios](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenarios.html)
 
 `quine` is looking for funding for the following Bounty Target Upgrades
-- ElasticCache(Redis) Multi Node Deployment ( $1,000 )
-- RDS(PostgreSQL) High Availability Deployemnt with and without Aurora DB ( $10,000 )
-- RDS(MySQL) Single Node Deployemnt without Aurora DB ( $2,000 )
-- RDS(MySQL) High Availability Deployemnt with and without Aurora DB ( $10,000 )
-- Overhaul of the Command Style interface using Python rather than a `bash operations.sh` file. This'll include complete documentation ( $25,000 )
-- Private VPC Configuration, complete with bastion service available from an Elastic IP with Kubernetes ( $1,000 )
-- Public VPC Configuration, complete with bastion service available from an Elastic IP with Kubernetes ( $1,000 )
-- Conncurrent SSH Support, adds the ability to allocate hundreds of EC2 Nodes ( $10,000 )
-- RnD around deploying Thousands of EC2 Nodes in the shortest amount of time possible ( hourly rate )
-- Route53 Private Hosted Zone support ( https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html ) ( $5,000 )
-- Enable intelligent ACM allocation and updates when new subdomains are added to TLDs within a Route53 Hosted Zone ( https://github.com/jbcurtin/quine#acm ) ( $15,000 )
+- ElasticCache(Redis) Multi Node Deployment
+- RDS(PostgreSQL) High Availability Deployemnt with and without Aurora DB
+- RDS(MySQL) Single Node Deployemnt without Aurora DB
+- RDS(MySQL) High Availability Deployemnt with and without Aurora DB
+- Overhaul of the Command Style interface using Python rather than a `bash operations.sh` file. This'll include complete documentation
+- Private VPC Configuration, complete with bastion service available from an Elastic IP with Kubernetes
+- Public VPC Configuration, complete with bastion service available from an Elastic IP with Kubernetes
+- Conncurrent SSH Support, adds the ability to allocate hundreds of EC2 Nodes
+- RnD around deploying Thousands of EC2 Nodes in the shortest amount of time possible
+- Route53 Private Hosted Zone support ( https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html )
+- Enable intelligent ACM allocation and updates when new subdomains are added to TLDs within a Route53 Hosted Zone ( https://github.com/jbcurtin/quine#acm )
 
 https://www.patreon.com/jbcurtin
 
